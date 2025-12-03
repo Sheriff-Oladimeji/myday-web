@@ -1,12 +1,20 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center justify-between px-4 md:px-8">
+      <div className="w-[90%] mx-auto flex h-14 max-w-screen-2xl items-center justify-between ">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
+            <Image
+              src="/icon.png"
+              alt="My Day Logo"
+              width={32}
+              height={32}
+              className="rounded-lg"
+            />
             <span className="font-bold text-xl tracking-tight">My Day</span>
           </Link>
         </div>

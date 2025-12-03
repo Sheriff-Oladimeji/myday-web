@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -8,9 +9,16 @@ export function Footer() {
           <div className="md:col-span-2">
             <Link
               href="/"
-              className="inline-block font-bold text-xl tracking-tight mb-4"
+              className="inline-flex items-center space-x-2 font-bold text-xl tracking-tight mb-4"
             >
-              My Day
+              <Image
+                src="/icon.png"
+                alt="My Day Logo"
+                width={32}
+                height={32}
+                className="rounded-lg"
+              />
+              <span>My Day</span>
             </Link>
             <p className="text-muted-foreground max-w-xs">
               The simple, elegant routine tracker designed to help you build
