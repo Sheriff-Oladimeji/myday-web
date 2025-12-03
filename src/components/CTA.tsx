@@ -37,7 +37,7 @@ export function CTA() {
               <Button
                 variant="outline"
                 size="lg"
-                className="w-full sm:w-auto h-14 px-8 text-base gap-2 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
+                className="w-full sm:w-auto h-14 px-8 text-base gap-2 bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
                 onClick={(e) => {
                   e.preventDefault();
                   toast.info("Coming Soon to iOS", {
