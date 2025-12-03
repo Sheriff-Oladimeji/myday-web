@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
       <main className="flex-1 container px-4 md:px-8 mx-auto py-24 max-w-4xl">
         <h1 className="text-3xl font-bold mb-8">Privacy Policy</h1>
         <p className="text-muted-foreground mb-8">
-          Last Updated: November 25, 2025
+          Last Updated: December 3, 2025
         </p>
 
         <div className="space-y-8">
@@ -65,11 +65,10 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-3">
-              Optional Cloud Sync (Future Feature)
-            </h2>
+            <h2 className="text-xl font-semibold mb-3">Optional Cloud Sync</h2>
             <p className="leading-relaxed mb-2">
-              If you choose to sign in with Google for cloud synchronization:
+              Cloud synchronization is available as an optional feature. If you
+              choose to sign in with Google:
             </p>
             <ul className="list-disc pl-6 space-y-1">
               <li>Your email and name will be used for authentication</li>
@@ -77,6 +76,9 @@ export default function PrivacyPolicy() {
                 Your tasks and progress will be synced to secure cloud storage
               </li>
               <li>You can delete your cloud data at any time</li>
+              <li>
+                If you do not sign in, all data remains locally on your device
+              </li>
             </ul>
           </section>
 
