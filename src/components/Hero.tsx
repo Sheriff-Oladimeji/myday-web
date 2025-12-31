@@ -127,7 +127,7 @@ export function Hero() {
                     <p className="text-xs font-medium text-muted-foreground">
                       Just now
                     </p>
-                    <p className="text-sm font-bold">Healthy Lunch Completed</p>
+                    <p className="text-sm font-bold">Drink Water Completed</p>
                   </div>
                 </div>
               </div>
