@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import { Apple, Play, CheckCircle2, Star } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 export function Hero() {
   const handleIOSClick = (e: React.MouseEvent) => {
@@ -51,12 +51,17 @@ export function Hero() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-10">
-              <Link href="#" className="w-full sm:w-auto">
+              <Link href="https://play.google.com/store/apps/details?id=com.devsheriff.myday&pli=1" className="w-full sm:w-auto" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   className="w-full sm:w-auto h-12 px-8 shadow-lg shadow-primary/20 font-semibold"
                 >
-                  <Play className="w-4 h-4 fill-current mr-2" />
+                  <svg className="w-5 h-5 mr-2" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m10.1 8c0-2.8.7-5 2.2-6.5l.3-.3 273.7 273.7v5.3l-273.7 273.7-.3-.3c-1.5-1.5-2.2-3.8-2.2-6.5z" fill="#00f0ff"/>
+                    <path d="m388.9 360.7-106.3-106.3v-5.3l106.3-106.3 2.5 1.4 117.8 67c33.6 19.1 33.6 50.4 0 69.5l-117.8 67-2.5 3z" fill="#ffd900"/>
+                    <path d="m391.4 363.7-108.8-108.8-272.2 272.1c11.1 11.7 29.2 13.3 48.7 2.2l332.3-165.5z" fill="#ff3a44"/>
+                    <path d="m391.4 148.4-332.3-165.5c-19.5-11.1-37.6-9.5-48.7 2.2l272.2 272.1z" fill="#00a173"/>
+                  </svg>
                   Get on Google Play
                 </Button>
               </Link>
@@ -66,35 +71,14 @@ export function Hero() {
                 className="w-full sm:w-auto h-12 px-8 border-input bg-background/50 backdrop-blur-sm hover:bg-accent hover:text-accent-foreground"
                 onClick={handleIOSClick}
               >
-                <Apple className="w-5 h-5 mr-2 mb-0.5" />
-                App Store
+                <svg className="w-5 h-5 mr-2 mb-0.5" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c21.5-25.9 33.6-55.9 33.6-92 0-2.4-.2-4.9-.5-7.3-33 1.3-65 21.3-86.4 46.8-19 22.4-36 53.6-36 84.7 0 2.5.3 4.9.6 7.3 35.8-2.6 67.2-13.8 88.7-39.5z"/>
+                </svg>
+                Coming Soon
               </Button>
             </div>
 
-            {/* Social Proof / Trust */}
-            <div className="flex items-center gap-4 text-sm text-muted-foreground">
-              <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="w-8 h-8 rounded-full border-2 border-background bg-muted flex items-center justify-center text-[10px] font-medium overflow-hidden"
-                  >
-                    {/* Placeholder avatars - replace with actual images if you have them */}
-                    <div className="w-full h-full bg-secondary" />
-                  </div>
-                ))}
-              </div>
-              <div className="flex flex-col items-start">
-                <div className="flex items-center text-primary">
-                  <Star className="w-4 h-4 fill-current" />
-                  <Star className="w-4 h-4 fill-current" />
-                  <Star className="w-4 h-4 fill-current" />
-                  <Star className="w-4 h-4 fill-current" />
-                  <Star className="w-4 h-4 fill-current" />
-                </div>
-                <span className="text-xs">Loved by early adopters</span>
-              </div>
-            </div>
+
           </div>
 
           {/* Right Image Section */}
